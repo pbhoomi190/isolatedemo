@@ -11,11 +11,13 @@ class ExampleSendReceivePort extends StatefulWidget {
 
 class _ExampleSendReceivePortState extends State<ExampleSendReceivePort> {
 
+  // Variables
   Isolate _isolate;
   bool _running = false;
   bool _paused = false;
   String _message = '';
   String _threadStatus = '';
+
   ReceivePort _receivePort;
   Capability _capability;
 
